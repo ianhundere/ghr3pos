@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.github.com/repos/ianhundere/scales-o-rama/releases?state=all
+  response:
+    body:
+      string: '{"message":"API rate limit exceeded for x.x.x.x. (But here''s
+        the good news: Authenticated requests get a higher rate limit. Check out the
+        documentation for more details.)","documentation_url":"https://developer.github.com/v3/#rate-limiting"}
+
+        '
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-RateLimit-Used, X-OAuth-Scopes, X-Accepted-OAuth-Scopes,
+        X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset
+      Content-Length:
+      - '249'
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Nov 2020 21:06:55 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - Varnish
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Request-Id:
+      - FF27:3BD0:2897ADF:4262CFD:5F9F236F
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '0'
+      X-Ratelimit-Reset:
+      - '1604268144'
+      X-Ratelimit-Used:
+      - '60'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 403
+      message: rate limit exceeded
+version: 1

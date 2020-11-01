@@ -35,7 +35,6 @@ def test_main_pr_ratelimited(capsys):
 def test_main_rel_ratelimited(capsys):
     assert ghr3pos.main(['--user=ianhundere', '--repo=scales-o-rama', '--release']) == 0
     assert capsys.readouterr() == ('\n[RELEASE] You\'ve hit your API rate limit, refer to https://developer.github.com/v3/#rate-limiting for more information.\n','')
-@pytest.mark.vcr()
 def test_main_no_flags(capsys):
     assert ghr3pos.main(['--user=ianhundere', '--repo=scales-o-rama']) == 0
-    assert capsys.readouterr() == ('','no --release (-R) or --pullrequest (-P) flag given.')
+    assert capsys.readouterr() == ('','')

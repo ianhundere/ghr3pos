@@ -39,7 +39,7 @@ def main(args=None):
     if parsed.release:
         git.get_rel()
     if not parsed.release and not parsed.pullrequest:
-        parsed.error('no --release (-R) or --pullrequest (-P) flag given.')
+        parser.error('no --release (-R) or --pullrequest (-P) flag given.')
     return 0
 
 if __name__ == '__main__':
