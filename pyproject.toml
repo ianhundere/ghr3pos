@@ -1,0 +1,3 @@
+[tool.pytest.ini_options]
+minversion = "6.1.2"
+addopts = "--strict-config --strict-markers --cov=. --cov-report=term-missing:skip-covered"
