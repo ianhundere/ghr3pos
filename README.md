@@ -18,16 +18,20 @@ First `pip3 install .`
 General usage:
 
 ```
-usage: get the last 3 GitHub releases and/or pull requests of a repository [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PR]
+usage: ghr3pos.py [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PULLREQUEST]
+
+Get the last 3 GitHub releases and/or pull requests of a repository.
 
 required arguments:
-  -u , --user        github username
-  -r , --repo        github repository
+  -u , --user        GitHub username
+  -r , --repo        GitHub repository
+
+possible actions (at least one is required):
+  -R, --release      show last 3 GitHub releases
+  -P, --pullrequest  show last 3 GitHub pull requests
 
 optional arguments:
   -h, --help         show this help message and exit
-  -R, --release      show last 3 github releases
-  -P, --pullrequest  show last 3 github pull requests
   -v, --version      show program's version number and exit
 ```
 

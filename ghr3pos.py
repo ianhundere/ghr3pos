@@ -7,7 +7,7 @@ __version__ = '0.1.0'
 
 # disables default help
 parser = argparse.ArgumentParser(description='Get the last 3 GitHub releases and/or pull requests of a repository.',
-    usage='%(prog)s [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PR]', add_help=False)
+    usage='%(prog)s [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PULLREQUEST]', add_help=False)
 required = parser.add_argument_group('required arguments')
 one_or_both = parser.add_argument_group('possible actions (at least one is required)')
 optional = parser.add_argument_group('optional arguments')
