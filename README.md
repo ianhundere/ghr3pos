@@ -13,15 +13,13 @@ Requires the [Requests](http://docs.python-requests.org/) library. Should work o
 
 ### Installation
 
-Install with:
-`pip3 install .`
+Install with `pip3 install .`
 
 ###### If the following error occurs:
 
 `Directory '.' is not installable. File 'setup.py' not found.`
 
-Upgrade pip with:
-`pip3 install -U pip`
+Upgrade pip with `pip3 install -U pip`
 
 ### Usage
 
