@@ -13,7 +13,7 @@ Requires the [Requests](http://docs.python-requests.org/) library. Should work o
 
 ### Usage
 
-First `pip install .`
+First `pip3 install .`
 
 General usage:
 
