@@ -31,7 +31,7 @@ class Git:
         elif pulls:
             print(f'\nThe last 3 pull requests for {self.user} in the {self.repo} repo are:')
             for pull in pulls:
-                print('\n' + '\t' + 'Title: ' + pull['title'] + '\n\t' + 'Number: ' + str(pull['number']))
+                print('\n\tTitle: ' + pull['title'] + '\n\tNumber: ' + str(pull['number']))
 
     def rel_response(self):
         return requests.get(f'https://api.github.com/repos/{self.user}/{self.repo}/releases?state=all')
@@ -54,4 +54,4 @@ class Git:
         elif releases:
             print(f'\nThe last 3 releases/versions for {self.user} in the {self.repo} repo are:')
             for release in releases:
-                print('\n' + '\t' + 'Release: ' + release['name'] + '\n\t' + 'Version: ' + release['tag_name'])
+                print('\n\tRelease: ' + release['name'] + '\n\tVersion: ' + release['tag_name'])
