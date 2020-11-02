@@ -17,6 +17,7 @@ Install with:
 `pip3 install .`
 
 ###### If the following error occurs:
+
 `Directory '.' is not installable. File 'setup.py' not found.`
 
 Upgrade pip with:
