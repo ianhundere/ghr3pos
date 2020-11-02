@@ -16,7 +16,7 @@ Requires the [Requests](http://docs.python-requests.org/) library. Should work o
 Install with:
 `pip3 install .`
 
-#####If the following error occurs:
+###### If the following error occurs:
 `Directory '.' is not installable. File 'setup.py' not found.`
 
 Upgrade pip with:
