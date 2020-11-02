@@ -7,13 +7,22 @@ Requires the [Requests](http://docs.python-requests.org/) library. Should work o
 
 -   Supports unathenticated requests
 -   Handles edge cases such as:
-    - Rate limiting
-    - Non-existant user or repository
-    - No available releases or pull requests
+    -   Rate limiting
+    -   Non-existant user or repository
+    -   No available releases or pull requests
+
+### Installation
+
+Install with:
+`pip3 install .`
+
+######If the following error occurs:
+`Directory '.' is not installable. File 'setup.py' not found.`
+
+Upgrade pip with:
+`pip3 install -U pip`
 
 ### Usage
-
-First `pip3 install .`
 
 General usage:
 
@@ -36,13 +45,10 @@ optional arguments:
 ```
 
 Get last 3 GitHub releases:
-
 `python3 ghr3pos.py -u <user> -r <repository> -R`
 
 Get last 3 GitHub pull requests:
-
 `python3 ghr3pos.py -u <user> -r <repository> -P`
 
 Get last 3 GitHub requests and pull requests:
-
 `python3 ghr3pos.py -u <user> -r <repository> -RP`
