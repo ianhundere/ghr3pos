@@ -70,10 +70,9 @@ def test_main_no_flags(capsys):
 def test_main_exit(capsys):
     v = subprocess.run(
         [sys.executable, '-m', ghr3pos.__name__],
-        text=True,
         encoding='utf8',
-        capture_output=True,
-        check=False,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
     )
     assert v.returncode == 2
     assert v.stdout == ''
