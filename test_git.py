@@ -64,7 +64,7 @@ def test_main_no_flags(capsys):
         ghr3pos.main(['--user=ianhundere', '--repo=scales-o-rama'])
     assert exc_info.value.args == (2,)
     assert capsys.readouterr() == (
-        '', 'usage: __main__.py [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PULLREQUEST]\n__main__.py: error: no --release (-R) or --pullrequest (-P) flag given.\n')
+        '', 'usage: ghr3pos.py [-h] [-u USER] [-r REPO] [-R RELEASE] [-P PULLREQUEST]\nghr3pos.py: error: no --release (-R) or --pullrequest (-P) flag given.\n')
 
 
 def test_main_exit(capsys):
