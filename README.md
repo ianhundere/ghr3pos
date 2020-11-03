@@ -13,13 +13,7 @@ Requires the [Requests](http://docs.python-requests.org/) library. Should work o
 
 ### Installation
 
-Install with `pip3 install .`
-
-###### If the following error occurs:
-
-`Directory '.' is not installable. File 'setup.py' not found.`
-
-Upgrade pip with `pip3 install -U pip`
+`pip3 install .`
 
 ### Usage
 
@@ -51,3 +45,9 @@ Get last 3 GitHub pull requests:
 
 Get last 3 GitHub requests and pull requests:
 `python3 ghr3pos.py -u <user> -r <repository> -RP`
+
+##### Troubleshooting
+
+Upgrade pip with `pip3 install -U pip` if the following error occurs:
+
+`Directory '.' is not installable. File 'setup.py' not found.`
