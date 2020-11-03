@@ -1,6 +1,6 @@
 [tool.pytest.ini_options]
 minversion = "6.1.2"
-addopts = "--strict-config --strict-markers --cov=. --cov-report=term-missing:skip-covered"
+addopts = "--strict-config --strict-markers --cov=. --cov-report=term-missing:skip-covered --cov-fail-under=100"
 [build-system]
 requires = [
   "setuptools >= 40.9.0",
